@@ -1,0 +1,26 @@
+.coupon-loader-btn-wrapper {
+    position: relative;
+}
+.coupon-loader-message {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transform: translateY(-150%);
+    font-size: 14px;
+    background-color: #3f3f3f;
+    color: #fff;
+    padding: 5px;
+    box-shadow: 3px 3px 3px 2px #00000042;
+    visibility: hidden;
+}
+.coupon-loader-message::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 30%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #3f3f3f transparent transparent transparent;
+  }
