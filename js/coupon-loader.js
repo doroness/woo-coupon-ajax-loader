@@ -3,6 +3,7 @@ jQuery( document ).ready( function( $ ){
 
     $('.coupon-loader-btn').click(function (e) { 
         e.preventDefault();
+        //TODO: Add loading icon+Disable button while loading
         var theBtn         =    $(this),
             coupon_code    =    $(theBtn).attr('data-coupon'),
             redirectToCart =    $(theBtn).attr('data-redirect');
